@@ -36,13 +36,20 @@ def checkPrime(number):
 if __name__ == "__main__":
     print("****** PRIME CHECKER ******")
 
-    # By default, input() treats everything like text.
-    # We need to use int() to cast the value to an
-    # integer type.
-    inputNumber = int(input("Please enter an integer: "))
-    factors = checkPrime(inputNumber)
+    while True:
+        choice = input("Please enter an integer (or Q to quit):")
+        if choice == 'q' or choice == 'Q':
+            print("Good bye")
+            break
 
-    if factors:
-        print(f"Factors found: {factors[0]} * {factors[1]} = {inputNumber}")
-    else:
-        print(f"{inputNumber} is prime")
+        # By default, input() treats everything like text.
+        # We need to use int() to cast the value to an
+        # integer type.
+        inputNumber = int(choice)
+        factors = checkPrime(inputNumber)
+
+        if factors:
+            print(
+                f"Factors found: {factors[0]} * {factors[1]} = {inputNumber}")
+        else:
+            print(f"{inputNumber} is prime")

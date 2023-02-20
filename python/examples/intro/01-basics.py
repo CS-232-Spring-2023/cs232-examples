@@ -1,13 +1,12 @@
 """Python Basics
 
-This program introduces some of the basics
+This program introduces the basics
 of the python programming language. The first
 thing you will notice is this is a docstring.
 Docstrings are comments that are meant to be
 used at the top of files, classes, or below
 function definitions to generate documentation.
 """
-
 
 # Any line that begins with a hashtag is a comment.
 # It is best practice to use the hashtag instead of
@@ -70,7 +69,7 @@ print("Score:", 10, sep="==>")
 print("Hello", "World", sep=" ", end=", ")
 print("Good to see you", end="!\n")
 
-# Note that these named parameters must appear AFTER all of
+# Note that these named parameters must appear AFTER all
 # the other unnamed parameters.
 
 
@@ -80,19 +79,19 @@ print("Good to see you", end="!\n")
 print(3 + 1)  # Addition
 print(3 - 1)  # Subtraction
 print(3 * 1)  # Multiplication
-print(3 ** 2) # Exponents (3^2)
+print(3 ** 2)  # Exponents (3^2)
 print(3 / 2)  # Division always produces a float
-print(6 / 2)  
-print(3 // 2) # Floor division (produces an integer)
+print(6 / 2)
+print(3 // 2)  # Floor division (produces an integer)
 print(17 % 3)  # Modulus division (remainder)
 
 # Some of these same operators can be used for string manipulation
-print("String " + "Addition") # Concatination
+print("String " + "Addition")  # Concatination
 print("Repeat" * 4)           # Repeating strings
 
 # While on the topic...Strings in Python are immutable
 # meaning they can't be changed. Each time you manipulate
-# a string, you actually get a brand new string (this
+# a string, you actually get a brand-new string (this
 # includes concatination and multiplication).
 
 
@@ -101,7 +100,7 @@ print("Repeat" * 4)           # Repeating strings
 
 # Lists which work very similarly to arrays.
 # Empty list
-myEmptyList = [] 
+myEmptyList = []
 print(myEmptyList)
 
 # A list initialized with items
@@ -120,7 +119,7 @@ myVariousItems.append("new item")
 print(myVariousItems)
 
 # Remove and return the last item from the list
-print(myVariousItems.pop()) 
+print(myVariousItems.pop())
 print(myVariousItems)
 
 # Insert an item at an index
@@ -142,7 +141,7 @@ print(myList)
 
 # Delete a list
 print(myList)
-del myList # The list can no longer be used once deleted
+del myList  # The list can no longer be used once deleted
 # print(myList) # This will cause an error
 
 # Tuples are similar to lists, but they are immutable and cannot change
@@ -158,7 +157,7 @@ print(myTuple)
 print(myTuple[2])
 
 # A tuple with only one item has special syntax
-mySingleTuple = ("one item only",) # note the trailing comma
+mySingleTuple = ("one item only",)  # note the trailing comma
 print(mySingleTuple)
 
 # Dictionaries store data in key, value pairs
@@ -168,7 +167,7 @@ print(myEmptyDictionary)
 
 # Initialized Dictionary
 # key:value
-myDictionary = { 10:"foo", 14:"bar", "baz":40 }
+myDictionary = {10: "foo", 14: "bar", "baz": 40}
 print(myDictionary)
 
 # Add an item to the dictionary
@@ -178,7 +177,7 @@ print(myDictionary)
 # Change an item in the dictionary
 myDictionary["new item"] = "I'm and updated item!"
 print(myDictionary)
-myDictionary.update({50:"I'm updated with a function!"})
+myDictionary.update({50: "I'm updated with a function!"})
 print(myDictionary)
 
 # Access a data item by its key
@@ -186,11 +185,11 @@ print(myDictionary)
 # data is in the dictionary or you get an error.
 print(myDictionary["baz"])
 print(myDictionary[14])
-# Alternatively, you can use the get function 
+# Alternatively, you can use the get function
 # and provide the key. This is safer as it does
 # not throw an error if the key in the dictionary.
-print(myDictionary.get(10)) # Returns the value
-print(myDictionary.get("foobar")) # Returns None (key not there) 
+print(myDictionary.get(10))  # Returns the value
+print(myDictionary.get("foobar"))  # Returns None (key not there)
 # None can be considered the equivalent of NULL is C/C++
 
 # Get a list of all the keys in a dictionary
@@ -223,6 +222,6 @@ mySet.update(itemList)
 print(mySet)
 
 # Remove an item
-mySet.remove("donuts") # Will cause an error if the item isn't in the list
+mySet.remove("donuts")  # Will cause an error if the item isn't in the list
 print(mySet)
-mySet.discard("donuts") # Removes an item WITHOUT causing an error
+mySet.discard("donuts")  # Removes an item WITHOUT causing an error

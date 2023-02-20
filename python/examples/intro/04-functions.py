@@ -10,7 +10,7 @@ Demonstrate the use of Python functions.
 from os import sep
 
 
-def displayGreeting():
+def display_greeting():
     """
     Prints a greeting to the console
     """
@@ -59,7 +59,7 @@ def delimitedList(values, separator=','):
 # like the int main() function in C/C++.
 # We will see this more later...
 if __name__ == "__main__":
-    displayGreeting()
+    display_greeting()
 
     displayGreetingWithName("Sarah")
     print(delimitedList(["apple", "grape", "pear"]))

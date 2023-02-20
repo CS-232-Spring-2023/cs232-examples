@@ -5,7 +5,7 @@ indices and slicing for iterables
 """
 
 
-def indexingExample(container):
+def indexing_example(container):
     """Accessing elements
     
     Args:
@@ -34,7 +34,7 @@ def indexingExample(container):
     # will result in an error
 
 
-def slicingExample(container):
+def slicing_example(container):
     """Slicing allows you to take a linear
     subset of a container to produce a new
     container:
@@ -50,14 +50,14 @@ def slicingExample(container):
     print(container[0:3])
 
     # The starts and ends are optional
-    print(container[:]) # Slice beginning to end
-    print(container[1:]) # Slice index 1 to the end
-    print(container[:3]) # Slice beginning to index 2
-    print(container[-2:]) # Slice second to last to end
+    print(container[:])  # Slice beginning to end
+    print(container[1:])  # Slice index 1 to the end
+    print(container[:3])  # Slice beginning to index 2
+    print(container[-2:])  # Slice second to last to end
 
     # The step controls how we increment to the next item
-    print(container[::2]) # Slice every other item
-    print(container[-1::-1]) # Slice in reverse!
+    print(container[::2])  # Slice every other item
+    print(container[-1::-1])  # Slice in reverse!
 
 
 def main():
@@ -67,13 +67,14 @@ def main():
     my_list = ["apples", "oranges", "pears", "bananas", "berries"]
     my_tuple = ("a", "b", "c", "d", "e")
 
-    indexingExample(my_string)
-    indexingExample(my_list)
-    indexingExample(my_tuple)
+    indexing_example(my_string)
+    indexing_example(my_list)
+    indexing_example(my_tuple)
 
-    slicingExample(my_string)
-    slicingExample(my_list)
-    slicingExample(my_tuple)
+    slicing_example(my_string)
+    slicing_example(my_list)
+    slicing_example(my_tuple)
+
 
 if __name__ == "__main__":
     main()

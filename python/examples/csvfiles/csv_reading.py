@@ -60,8 +60,10 @@ def grade_distribution_report(input_file_path, output_file_path):
     # https://www.tutorialspoint.com/python/python_files_io.htm
     with open(output_file_path, "w") as output_file:
         output_file.write("Grade Distribution\n")
-        for key, value in grade_distribution.items():
-            output_file.write(f"{key}: {value}\n")
+        sorted_keys = [x for x in grade_distribution.keys()]
+        sorted_keys.sort()
+        for key in sorted_keys:
+            output_file.write(f"{key}: {grade_distribution[key]}\n")
 
 
 def final_grade_report(input_file_path):

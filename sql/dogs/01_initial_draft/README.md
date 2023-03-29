@@ -25,6 +25,6 @@ Run main
 
 `python dog_app.py`
 
-Decativate the environment
+Deactivate the environment
 
 `deactivate`

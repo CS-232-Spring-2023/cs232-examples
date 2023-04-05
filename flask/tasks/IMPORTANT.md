@@ -12,11 +12,11 @@
   
 4. Create a virtual environment named `env` in the project repository folder using python
   
-  - If you don't remember how, the [class website has instructions](http://csweb.wooster.edu/dguarnera/cs232/resources/guides/venv-and-pip.html)
+  - If you don't remember how, the [class website has instructions](http://csweb.wooster.edu/mionescu/cs232/guides/venv-and-pip/)
 
 5. Activate your virtual environment
   
-  - If you don't remember how, the [class website has instructions](http://csweb.wooster.edu/dguarnera/cs232/resources/guides/venv-and-pip.html)
+  - If you don't remember how, the [class website has instructions](http://csweb.wooster.edu/mionescu/cs232/guides/venv-and-pip/)
 
 6. Install the project dependencies using `pip`
   
